@@ -3,7 +3,6 @@ from conftest import get_zip_data
 
 def test_pdf():
     zip_data = get_zip_data('pdf')
-    print(f'zip_data = {zip_data}')
 
     assert zip_data is not None, 'Файл пустой'
     assert len(zip_data) == 2543, 'Некорректное количество символов'
@@ -13,7 +12,6 @@ def test_pdf():
 
 def test_xlsx():
     zip_data = get_zip_data('xlsx')
-    print(f'zip_data = {zip_data}')
 
     assert zip_data is not None, 'Файл пустой'
     assert len(zip_data) == 648, 'Некорректное количество символов'
@@ -22,7 +20,6 @@ def test_xlsx():
 
 def test_csv():
     zip_data = get_zip_data('csv')
-    print(f'\n\nzip_data = \n\n{zip_data}')
 
     assert zip_data is not None, 'Файл пустой'
     assert len(zip_data) == 735, 'Некорректное количество символов'
